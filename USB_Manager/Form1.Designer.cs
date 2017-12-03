@@ -142,6 +142,7 @@
             // 
             // DevisesList
             // 
+            this.DevisesList.BackColor = System.Drawing.Color.LightBlue;
             this.DevisesList.ContextMenuStrip = this.contextMenuStrip1;
             this.DevisesList.Location = new System.Drawing.Point(12, 9);
             this.DevisesList.Name = "DevisesList";
@@ -171,7 +172,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGreen;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(462, 154);
             this.Controls.Add(this.DevisesList);
             this.Controls.Add(this.busy);

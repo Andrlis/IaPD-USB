@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UsbEject;
 
 namespace USB_Manager.bean
@@ -75,9 +71,7 @@ namespace USB_Manager.bean
         public bool Eject()
         {
             if (!extracted)
-            {
                 return false;
-            }
 
             VolumeDeviceClass volumeDeviceClass = new VolumeDeviceClass();
             foreach (Volume dev in volumeDeviceClass.Devices)
@@ -98,10 +92,10 @@ namespace USB_Manager.bean
                 }
                 catch
                 {
+                    System.Console.WriteLine("Error");
                     break;
                 }
             }
-
             return false;
         }
 
